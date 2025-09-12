@@ -158,10 +158,10 @@ body {
 .hero::after {
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: -40px;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 77px;
   background: linear-gradient(
     135deg,
     var(--color-secondary) 0%,
