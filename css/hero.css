@@ -18,7 +18,7 @@
   right: 0;
   width: 50%;
   height: 70vh;
-  background: url(/img/logo-hero.svg);
+  background: url(../img/logo-hero.svg);
   z-index: 1;
   bottom: 0;
   min-width: 592px;
