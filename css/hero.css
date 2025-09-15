@@ -33,7 +33,6 @@
 }
 
 .hero__title {
-  font-size: var(--font-size-8x1);
   font-weight: 700;
   color: var(--color-white);
   margin-bottom: var(--spacing-xs);
