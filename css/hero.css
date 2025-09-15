@@ -1,0 +1,72 @@
+/* ==== HERO SECTION ==== */
+.hero {
+  padding: calc(80px + var(--spacing-3xl)) 0 var(--spacing-3xl);
+  background: linear-gradient(
+    246deg,
+    #011626 10.91%,
+    #04518c 28.28%,
+    #011626 41.3%
+  );
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 70vh;
+  background: url(/img/logo-hero.svg);
+  z-index: 1;
+  bottom: 0;
+  min-width: 592px;
+  background-repeat: no-repeat;
+}
+
+.hero__container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  z-index: 2;
+}
+
+.hero__title {
+  font-size: var(--font-size-8x1);
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-xs);
+  line-height: 1.2;
+}
+
+.hero__subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  margin-bottom: var(--spacing-xl);
+  padding-left: var(--spacing-xs);
+  font-weight: 300;
+}
+
+.hero__cta {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.hero__cta :nth-child(2) {
+  display: none;
+}
+
+@media (max-width: 968px) {
+  .hero::after {
+    content: "";
+    height: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__cta :nth-child(2) {
+    display: block;
+  }
+}

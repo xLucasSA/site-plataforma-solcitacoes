@@ -8,11 +8,17 @@
       content="Software inteligente para gestão financeira de negócios e organização contábil"
     />
     <title>CrescerFlow</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/hero.css" />
+    <link rel="stylesheet" href="/css/benefits.css" />
+    <link rel="stylesheet" href="/css/comparison.css" />
+    <link rel="stylesheet" href="/css/features.css" />
+    <link rel="stylesheet" href="/css/header.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="img/logo-crescer.png" type="image/png" />
     <!-- FontAwesome CDN -->
     <link
       rel="stylesheet"
@@ -24,9 +30,9 @@
     <header class="header">
       <div class="header__container">
         <div class="header__logo">
-          <h2 class="header__brand">
-            <img src="/img/metas_pgamento.svg" style="width: 48px" alt="logo" />
-          </h2>
+          <div class="header__brand">
+            <img src="/img/metas_pgamento.svg" style="width: 36px" alt="logo" />
+          </div>
         </div>
         <nav class="header__nav">
           <ul class="nav__list">
@@ -53,8 +59,7 @@
         <div class="hero__content">
           <h1 class="hero__title">CrescerFlow</h1>
           <p class="hero__subtitle">
-            Sua gestão financeira <strong>sem papelada</strong> e
-            <strong>sem estresse</strong>
+            Sua gestão financeira sem papelada e sem estresse
           </p>
           <div class="hero__cta">
             <a href="#demo" class="btn btn--primary">Começar Agora</a>
@@ -64,13 +69,222 @@
       </div>
     </section>
 
-    <!-- Benefícios Section -->
-    <section class="benefits" id="beneficios">
-      <div class="benefits__container">
-        <h2 class="benefits__title">Benefícios para seu Negócio</h2>
+    <!-- Comparison Section -->
+    <section class="comparison" id="comparison">
+      <div class="container">
+        <div class="comparison__content">
+          <!-- Problemas Atuais -->
+          <div class="comparison__column comparison__column--problems">
+            <div class="comparison__column-header">
+              <h3 class="comparison__column-title">
+                Problemas que você enfrenta hoje
+              </h3>
+            </div>
 
-        <!-- Para Gestores -->
-        <div class="benefits__group">
+            <div class="comparison__items">
+              <div class="comparison__item comparison__item--problem">
+                <div class="comparison__item-icon">
+                  <i class="fas fa-times" style="color: red"></i>
+                </div>
+                <div class="comparison__item-content">
+                  <p>
+                    Documentos espalhados, difíceis de encontrar e sempre no
+                    momento errado
+                  </p>
+                </div>
+              </div>
+
+              <div class="comparison__item comparison__item--problem">
+                <div class="comparison__item-icon">
+                  <i class="fas fa-times" style="color: red"></i>
+                </div>
+                <div class="comparison__item-content">
+                  <p>
+                    Comunicação lenta, informações perdidas e retrabalho
+                    constante
+                  </p>
+                </div>
+              </div>
+
+              <div class="comparison__item comparison__item--problem">
+                <div class="comparison__item-icon">
+                  <i class="fas fa-times" style="color: red"></i>
+                </div>
+                <div class="comparison__item-content">
+                  <p>
+                    Dados confusos, sem visibilidade real da situação financeira
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Melhorias com o Produto -->
+          <div class="comparison__column comparison__column--solutions">
+            <div class="comparison__column-header">
+              <h3 class="comparison__column-title">Com a nossa solução</h3>
+            </div>
+
+            <div class="comparison__items">
+              <div class="comparison__item comparison__item--solution">
+                <div class="comparison__item-icon">
+                  <i class="fas fa-check" style="color: green"></i>
+                </div>
+                <div class="comparison__item-content">
+                  <p>
+                    Acesso instantâneo, seguro e organizado a todos os seus
+                    documentos
+                  </p>
+                </div>
+              </div>
+
+              <div class="comparison__item comparison__item--solution">
+                <div class="comparison__item-icon">
+                  <i class="fas fa-check" style="color: green"></i>
+                </div>
+                <div class="comparison__item-content">
+                  <p>Comunicação eficiente e informações sempre atualizadas</p>
+                </div>
+              </div>
+
+              <div class="comparison__item comparison__item--solution">
+                <div class="comparison__item-icon">
+                  <i class="fas fa-check" style="color: green"></i>
+                </div>
+                <div class="comparison__item-content">
+                  <p>
+                    Dashboards intuitivos com insights claros sobre suas
+                    finanças
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="beneficios">
+      <div class="container">
+        <div class="benefits__header">
+          <h2 class="benefits__title">Benefícios que Transformam sua Gestão</h2>
+          <p class="benefits__subtitle">
+            Descubra como nossa solução pode revolucionar a forma como você
+            gerencia seu negócio
+          </p>
+        </div>
+
+        <div class="benefits__content">
+          <div class="benefits__item">
+            <div class="benefits__item-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div class="benefits__item-content">
+              <h3 class="benefits__item-title">
+                Mais Tempo para o que Importa
+              </h3>
+              <div class="benefits__item-features">
+                <div class="benefits__feature">
+                  <i class="fas fa-robot benefits__feature-icon"></i>
+                  <div class="benefits__feature-content">
+                    <h4>Automatize a contabilidade</h4>
+                    <p>
+                      Seu contador acessa tudo em tempo real, eliminando a troca
+                      de e-mails e o envio de papéis.
+                    </p>
+                  </div>
+                </div>
+                <div class="benefits__feature">
+                  <i class="fas fa-bullseye benefits__feature-icon"></i>
+                  <div class="benefits__feature-content">
+                    <h4>Foque no seu negócio</h4>
+                    <p>
+                      Gaste segundos para lançar despesas e ganhe horas para
+                      focar no crescimento da sua empresa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="benefits__item">
+            <div class="benefits__item-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="benefits__item-content">
+              <h3 class="benefits__item-title">
+                Controle Financeiro na Palma da Mão
+              </h3>
+              <div class="benefits__item-features">
+                <div class="benefits__feature">
+                  <i class="fas fa-search-dollar benefits__feature-icon"></i>
+                  <div class="benefits__feature-content">
+                    <h4>Saiba para onde seu dinheiro vai</h4>
+                    <p>
+                      Tenha clareza total dos seus gastos com relatórios visuais
+                      e identifique na hora onde economizar.
+                    </p>
+                  </div>
+                </div>
+                <div class="benefits__feature">
+                  <i class="fas fa-calculator benefits__feature-icon"></i>
+                  <div class="benefits__feature-content">
+                    <h4>Nunca mais estoure o orçamento</h4>
+                    <p>
+                      Crie metas de gastos por categoria e acompanhe em tempo
+                      real para manter suas finanças sob controle.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="benefits__item">
+            <div class="benefits__item-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="benefits__item-content">
+              <h3 class="benefits__item-title">
+                Segurança e Decisões Inteligentes
+              </h3>
+              <div class="benefits__item-features">
+                <div class="benefits__feature">
+                  <i class="fas fa-cloud benefits__feature-icon"></i>
+                  <div class="benefits__feature-content">
+                    <h4>Diga adeus à papelada</h4>
+                    <p>
+                      Centralize todos os comprovantes e documentos fiscais em
+                      um ambiente 100% digital e seguro.
+                    </p>
+                  </div>
+                </div>
+                <div class="benefits__feature">
+                  <i class="fas fa-lightbulb benefits__feature-icon"></i>
+                  <div class="benefits__feature-content">
+                    <h4>Tome decisões com confiança</h4>
+                    <p>
+                      Use informações precisas e atualizadas para planejar o
+                      futuro da sua empresa com muito mais estratégia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <!-- <section class="benefits" id="beneficios">
+      <div class="benefits__container">
+        <h2 class="benefits__title">Benefícios para seu Negócio</h2> -->
+
+    <!-- Para Gestores -->
+    <!-- <div class="benefits__group">
           <div class="benefits__header">
             <h3 class="benefits__group-title">
               Para Gestores e Donos de Negócio
@@ -108,10 +322,10 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <!-- Para Contadores -->
-        <div class="benefits__group">
+    <!-- Para Contadores -->
+    <!-- <div class="benefits__group">
           <div class="benefits__header">
             <h3 class="benefits__group-title">Para Contadores e Escritórios</h3>
           </div>
@@ -149,7 +363,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Funcionalidades Section -->
     <section class="features" id="funcionalidades">

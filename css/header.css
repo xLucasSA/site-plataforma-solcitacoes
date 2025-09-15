@@ -1,0 +1,49 @@
+/* ==== HEADER ==== */
+.header {
+  background-color: var(--color-primary);
+  box-shadow: var(--box-shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header__container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav {
+  width: 100%;
+}
+
+.header__nav .nav__list {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-lg);
+  justify-content: right;
+  padding-right: 24px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav__link:hover {
+  color: var(--color-accent);
+}
